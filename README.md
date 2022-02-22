@@ -2,7 +2,6 @@
 
 
 [Wordpress Config](/wordpress.conf)
-
 [NameLessMC Config](/namelessmc.conf)
 
 
