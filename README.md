@@ -1,6 +1,4 @@
 # Nginx Templates i use.
-
-## Extra information.
 In all of these config files i use CertBot for the HTTPS.
 
 **How to install CertBot with Nginx.**
