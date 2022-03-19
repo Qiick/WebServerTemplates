@@ -25,3 +25,6 @@ theme:
 plugins:
   - tags
       tags_file: category.md
+
+markdown_extensions:
+  - attr_list
