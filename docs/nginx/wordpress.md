@@ -8,7 +8,7 @@ You can use this for of course wordpress.
 ???+ info
   I'm using for this template php7.4 and php7.4-fpm.
 
-``` py title="wordpress.conf"
+``` yaml py title="wordpress.conf"
 server {
     listen 80;
     server_name www.domain.com # (1)! domain.com;
