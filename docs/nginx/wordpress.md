@@ -7,10 +7,9 @@ This is the wordpress nginx template.
 You can use this for of course wordpress.
 ???+ info
   I'm using for this template php7.4 and php7.4-fpm.
+=== "Wordpress with Letsencrypt"
 
-=== "Nginx with LetsEncrypt"
-    ```
-    server {
+    ``` server {
     listen 80;
     server_name www.domain.com domain.com;
     return 301 https://www.domain.com$request_uri; (1)!
@@ -40,9 +39,11 @@ You can use this for of course wordpress.
                 fastcgi_param   SCRIPT_FILENAME $document_root$fastcgi_script_name;
         }
     }
-=== "Nginx with Cloudflare SSL"
-```
-    server {
+    ```
+
+=== "Wordpress with Cloudflare SSL"
+
+    ``` server {
     listen 80;
     server_name www.domain.com domain.com;
     return 301 https://www.domain.com$request_uri; (1)!
@@ -72,4 +73,4 @@ You can use this for of course wordpress.
                 fastcgi_param   SCRIPT_FILENAME $document_root$fastcgi_script_name;
         }
     }
-  ```
+    ```
