@@ -23,7 +23,7 @@ theme:
 
 # Plugins 
 plugins:
-  - tags
+  - tags:
       tags_file: category.md
 
 markdown_extensions:
