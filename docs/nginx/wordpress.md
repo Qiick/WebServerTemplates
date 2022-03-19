@@ -5,11 +5,9 @@ tags:
 #Wordpress Template.
 This is the wordpress nginx template. 
 You can use this for of course wordpress.
-???+ info
-  I'm using for this template php7.4 and php7.4-fpm.
+I'm using for this template php7.4 and php7.4-fpm.
 === "Wordpress with Letsencrypt"
-
-    ``` Wordpress with Letsencrypt 
+```
     server {
     listen 80;
     server_name www.domain.com domain.com;
@@ -40,11 +38,11 @@ You can use this for of course wordpress.
                 fastcgi_param   SCRIPT_FILENAME $document_root$fastcgi_script_name;
         }
     }
-    ```
+```
 
 === "Wordpress with Cloudflare SSL"
 
-    ``` Wordpress with Cloudflare SSL
+```
     server {
     listen 80;
     server_name www.domain.com domain.com;
@@ -75,4 +73,4 @@ You can use this for of course wordpress.
                 fastcgi_param   SCRIPT_FILENAME $document_root$fastcgi_script_name;
         }
     }
-    ```
+```
