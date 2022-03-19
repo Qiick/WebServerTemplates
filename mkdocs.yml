@@ -4,6 +4,7 @@ site_name: Webserver Templates
 theme:
  features:
    - content.code.annotate
+   - content.tabs.link
  name: material
  # Fonts
  font:
