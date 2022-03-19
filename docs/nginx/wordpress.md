@@ -39,9 +39,7 @@ I'm using for this template php7.4 and php7.4-fpm.
         }
     }
 ```
-
 === "Wordpress with Cloudflare SSL"
-
 ```
     server {
     listen 80;
