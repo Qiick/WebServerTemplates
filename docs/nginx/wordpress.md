@@ -11,20 +11,20 @@ You can use this for of course wordpress.
 ``` yaml
 server {
     listen 80;
-    server_name www.domain.com(6)! domain.com;
-    return 301 https://www.domain.com$request_uri;(1)!
+    server_name www.domain.com (6) domain.com;
+    return 301 https://www.domain.com$request_uri; (1)
 }
 
 server {
         listen 443;
         listen [::]:433;
 
-    ssl_certificate /etc/letsencrypt/live/www.domain.com(3)! /fullchain.pem   ;
-    ssl_certificate_key /etc/letsencrypt/live/www.domain.com(4)! /privkey.pem ;
+    ssl_certificate /etc/letsencrypt/live/www.domain.com (3) /fullchain.pem   ;
+    ssl_certificate_key /etc/letsencrypt/live/www.domain.com (4) /privkey.pem ;
 
         root /var/www/wordpress;
         index  index.php index.html index.htm;
-        server_name www.domain.com(5)! ;
+        server_name www.domain.com (5) ;
 
         error_log /var/log/nginx/mysite.com_error.log;
         access_log /var/log/nginx/mysite.com_access.log;
@@ -35,7 +35,7 @@ server {
         }
         location ~ \.php$ {
                 include snippets/fastcgi-php.conf;
-                fastcgi_pass unix:/run/php/php7.4(2)!-fpm.sock;
+                fastcgi_pass unix:/run/php/php7.4 (2) -fpm.sock;
                 fastcgi_param   SCRIPT_FILENAME $document_root$fastcgi_script_name;
         }
 }
