@@ -40,8 +40,8 @@ You can use this for of course wordpress.
                 fastcgi_param   SCRIPT_FILENAME $document_root$fastcgi_script_name;
         }
     }
-    ```
 === "Nginx with Cloudflare SSL"
+```
     server {
     listen 80;
     server_name www.domain.com domain.com;
