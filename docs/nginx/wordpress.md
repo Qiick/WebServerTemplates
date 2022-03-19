@@ -38,9 +38,9 @@ I'm using for this template php7.4 and php7.4-fpm.
                 fastcgi_param   SCRIPT_FILENAME $document_root$fastcgi_script_name;
         }
     }
-```
+  ```
 === "Wordpress with Cloudflare SSL"
-```
+  ```
     server {
     listen 80;
     server_name www.domain.com domain.com;
@@ -71,4 +71,4 @@ I'm using for this template php7.4 and php7.4-fpm.
                 fastcgi_param   SCRIPT_FILENAME $document_root$fastcgi_script_name;
         }
     }
-```
+  ```
