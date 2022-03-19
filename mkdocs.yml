@@ -2,6 +2,8 @@ site_name: Webserver Templates
 
 # Theme Settings
 theme:
+ features:
+   - content.code.annotate
  name: material
  # Fonts
  font:
