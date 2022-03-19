@@ -1,4 +1,6 @@
 site_name: Webserver Templates
+
+# Theme Settings
 theme:
  name: material
- custom_dir: material/overrides
+ custom_dir: docs/overrides
