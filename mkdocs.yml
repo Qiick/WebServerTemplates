@@ -3,4 +3,13 @@ site_name: Webserver Templates
 # Theme Settings
 theme:
  name: material
- custom_dir: material/overrides
+   palette: 
+    - scheme: default
+     primary: orange
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
