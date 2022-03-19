@@ -39,3 +39,5 @@ markdown_extensions:
   - md_in_html
   - pymdownx.superfences
   - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true 
