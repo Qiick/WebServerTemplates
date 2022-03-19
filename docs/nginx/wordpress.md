@@ -1,6 +1,6 @@
 ---
 tags:
-  - nginx
+  - Nginx
 ---
 #Wordpress Template.
 This is the wordpress nginx template. 
@@ -11,20 +11,20 @@ You can use this for of course wordpress.
 ``` py title="wordpress.conf"
 server {
     listen 80;
-    server_name www.domain.com domain.com;
-    return 301 https://www.domain.com$request_uri;
+    server_name www.domain.com (1) domain.com;
+    return 301 https://www.domain.com$request_uri; (1)
 }
 
 server {
         listen 443;
         listen [::]:433;
 
-    ssl_certificate /etc/letsencrypt/live/www.domain.com/fullchain.pem   ;
-    ssl_certificate_key /etc/letsencrypt/live/www.domain.com/privkey.pem ;
+    ssl_certificate /etc/letsencrypt/live/www.domain.com (1) /fullchain.pem   ;
+    ssl_certificate_key /etc/letsencrypt/live/www.domain.com (1) /privkey.pem ;
 
         root /var/www/wordpress;
         index  index.php index.html index.htm;
-        server_name www.domain.com;
+        server_name www.domain.com (1) ;
 
         error_log /var/log/nginx/mysite.com_error.log;
         access_log /var/log/nginx/mysite.com_access.log;
@@ -35,8 +35,11 @@ server {
         }
         location ~ \.php$ {
                 include snippets/fastcgi-php.conf;
-                fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+                fastcgi_pass unix:/run/php/php7.4(2)-fpm.sock;
                 fastcgi_param   SCRIPT_FILENAME $document_root$fastcgi_script_name;
         }
 }
 ```
+
+1.  Change www.domain.com & domain.com to your domain.
+2.  Change php7.4-fpm.sock to your php version. If your using 8.1. Change 7.4 to 8.1.
