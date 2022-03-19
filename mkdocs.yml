@@ -4,8 +4,7 @@ site_name: Webserver Templates
 theme:
  name: material
  palette: 
-  - scheme: default
-   primary: orange
+  - primary: orange
     toggle:
       icon: material/toggle-switch-off-outline 
       name: Switch to dark mode
