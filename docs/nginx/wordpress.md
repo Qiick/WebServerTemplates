@@ -42,7 +42,6 @@ You can use this for of course wordpress.
     }
     ```
 === "Nginx with Cloudflare SSL"
-    ```
     server {
     listen 80;
     server_name www.domain.com domain.com;
