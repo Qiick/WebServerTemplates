@@ -1,3 +1,3 @@
 site_name: Webserver Templates
 theme: material
-  
+  custom_dir: docs/overrides
