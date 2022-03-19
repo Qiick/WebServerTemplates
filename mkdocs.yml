@@ -11,13 +11,13 @@ theme:
  # Toggle / Dark <> Light mode
  palette: 
   - primary: black
-    accent: orange
+    accent: blue
     scheme: slate
     toggle:
       icon: material/toggle-switch-off-outline 
       name: Switch to dark mode
-  - primary: brown
-    accent: brown
+  - primary: teal
+    accent: teal
     scheme: default 
     toggle:
       icon: material/toggle-switch
