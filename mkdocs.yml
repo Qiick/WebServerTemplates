@@ -2,6 +2,7 @@ site_name: Webserver Templates
 repo_url: https://github.com/Qiick/WebServerTemplates
 repo_name: Qiick/WebServerTemplates
 # Theme Settings
+edit_uri: ""
 theme:
  features:
    - navigation.instant
