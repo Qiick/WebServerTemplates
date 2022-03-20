@@ -3,7 +3,7 @@ title: Letsencrypt
 ---
 # How to get letsencrypt cert.
 
-=== "Letsencrypt Nginx"
+=== "Letsencrypt with Nginx"
 
     Install Certbot
     ``` conf
@@ -16,7 +16,7 @@ title: Letsencrypt
     certbot certonly --nginx -d domain.com
     ````
 
-=== "Letsencrypt Apache"
+=== "Letsencrypt with Apache"
 
     Install Certbot
     ``` conf
@@ -29,7 +29,7 @@ title: Letsencrypt
     certbot certonly --apache -d domain.com
     ````
     
-=== "Letsencrypt Standalone"
+=== "Letsencrypt with Standalone"
 
     Install Certbot
     ``` conf
