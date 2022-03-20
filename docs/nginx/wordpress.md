@@ -8,7 +8,7 @@ You can use this for of course wordpress.
 I'm using for this template php7.4 and php7.4-fpm.
 
 === "Wordpress with Letsencrypt"
-  ```
+  ``` yaml
     server {
     listen 80;
     server_name www.domain.com domain.com;
@@ -41,7 +41,7 @@ I'm using for this template php7.4 and php7.4-fpm.
     }
   ```
 === "Wordpress with Cloudflare SSL"
-  ```
+  ``` yaml
     server {
     listen 80;
     server_name www.domain.com domain.com;
