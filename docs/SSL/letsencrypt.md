@@ -40,7 +40,3 @@ title: Letsencrypt
     ````
     certbot certonly --standalone -d domain.com
     ````  
-
-??? tip
-
-    Make the Cert first and then point it to your files. If you dont. You get an error.
