@@ -5,7 +5,7 @@ tags:
 ---
 # This is the wordpress template.
 
-[Letsencrypt SSL](../ssl/letsencrypt.md){ .md-button .md-button--primary } [Cloudflare SSL](../ssl/cloudflare.md){ .md-button .md-button--primary }
+[Letsencrypt SSL](/ssl/letsencrypt.md){ .md-button .md-button--primary } [Cloudflare SSL](/ssl/cloudflare.md){ .md-button .md-button--primary }
 
 === "Wordpress with Letsencrypt"
 
