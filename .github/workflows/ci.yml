@@ -14,4 +14,5 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material 
       - run: pip install mkdocs-git-revision-date-plugin
+      - run: apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
       - run: mkdocs gh-deploy --force
