@@ -1,5 +1,6 @@
 site_name: Webserver Templates
-
+repo_url: https://github.com/Qiick/WebServerTemplates
+repo_name: Qiick/WebServerTemplates
 # Theme Settings
 theme:
  features:
