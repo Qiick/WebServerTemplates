@@ -1,9 +1,11 @@
 ---
-title: NamelessMC Config
+title: Wordpress
 tags:
   - Nginx
 ---
-#Test
+# This is the wordpress template.
+
+[Letsencrypt SSl](../ssl/letsencrypt.md){ .md-button .md-button--primary } [Cloudflare SSl](../ssl/cloudflare.md){ .md-button .md-button--primary }
 
 === "Wordpress with Letsencrypt"
 
