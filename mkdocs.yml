@@ -3,6 +3,8 @@ site_name: Webserver Templates
 # Theme Settings
 theme:
  features:
+   - navigation.instant
+   - navigation.tabs
    - content.code.annotate
    - content.tabs.link
  name: material
