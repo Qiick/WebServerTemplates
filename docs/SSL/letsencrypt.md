@@ -5,6 +5,7 @@ title: Letsencrypt
 
 === "Letsencrypt Nginx"
 
+    Install Certbot
     ``` conf
     sudo apt update
     sudo apt install -y certbot
@@ -17,21 +18,25 @@ title: Letsencrypt
 
 === "Letsencrypt Apache"
 
+    Install Certbot
     ``` conf
-    #include <iostream>
-
-    int main(void) {
-      std::cout << "Hello world!" << std::endl;
-      return 0;
-    }
+    sudo apt update
+    sudo apt install -y certbot
+    sudo apt install -y python3-certbot-apache
     ```
+    Make the Cert
+    ````
+    certbot certonly --apache -d domain.com
+    ````
+    
 === "Letsencrypt Standalone"
 
+    Install Certbot
     ``` conf
-    #include <iostream>
-
-    int main(void) {
-      std::cout << "Hello world!" << std::endl;
-      return 0;
-    }
-    ```   
+    sudo apt update
+    sudo apt install -y certbot
+    ```
+    Make the Cert
+    ````
+    certbot certonly --standalone -d domain.com
+    ````  
