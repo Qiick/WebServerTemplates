@@ -5,9 +5,9 @@ tags:
 ---
 #Test
 
-=== "C"
+=== "Wordpress with Letsencrypt"
 
-    ``` c
+    ``` conf
     server {
     listen 80;
     server_name www.domain.com domain.com;
