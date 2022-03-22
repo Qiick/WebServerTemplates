@@ -6,3 +6,7 @@ tags:
 Here you can find all sorts of templates for Nginx, Caddy, Apache and in the furture more.
 
 [Show all categories](category.md){ .md-button .md-button--primary }
+
+!!! tip ""
+ 
+    In the furture there will be more.
